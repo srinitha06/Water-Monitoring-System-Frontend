@@ -20,7 +20,7 @@ function Dashboard() {
 
   const fetchSensorData = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/thingspeak");
+      const res = await fetch("https://water-monitoring-system-ox6o.onrender.com/api/thingspeak");
       const data = await res.json();
       setSensorData(data);
     } catch (err) {
@@ -31,7 +31,7 @@ function Dashboard() {
  
   const fetchDispensers = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/dispensers");
+      const res = await fetch("https://water-monitoring-system-ox6o.onrender.com/api/dispensers");
       const data = await res.json();
       setDispensers(data);
     } catch (err) {
@@ -44,7 +44,7 @@ function Dashboard() {
     e.preventDefault();
     if (!newDispenser.location) return alert("Enter dispenser location!");
     try {
-      const res = await fetch("http://localhost:5000/api/dispensers", {
+      const res = await fetch("https://water-monitoring-system-ox6o.onrender.com/api/dispensers", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newDispenser),
@@ -62,7 +62,7 @@ function Dashboard() {
   const handleDeleteDispenser = async (id) => {
     if (!window.confirm("Delete this dispenser?")) return;
     try {
-      const res = await fetch(`http://localhost:5000/api/dispensers/${id}`, {
+      const res = await fetch(`https://water-monitoring-system-ox6o.onrender.com/api/dispensers/${id}`, {
         method: "DELETE",
       });
       if (res.ok) fetchDispensers();

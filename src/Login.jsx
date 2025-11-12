@@ -12,7 +12,7 @@ function Login({ onLogin }) {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:5000/login", {
+      const res = await fetch("https://water-monitoring-system-ox6o.onrender.com/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

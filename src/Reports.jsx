@@ -7,7 +7,7 @@ function Reports() {
 
   const fetchSensorData = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/thingspeak");
+      const res = await fetch("https://water-monitoring-system-ox6o.onrender.com/api/thingspeak");
       const data = await res.json();
       setSensorData(data);
       generateAlerts(data);
