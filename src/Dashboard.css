@@ -1,0 +1,170 @@
+.dashboard-container {
+  padding: 25px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background: #f6f8fb;
+  min-height: 100vh;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.side-heading {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #283593;
+  font-weight: 600;
+}
+
+
+.overview-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.overview-card {
+  flex: 1;
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.overview-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.overview-card h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.overview-card.total {
+  border-left: 8px solid #007bff;
+}
+.overview-card.active {
+  border-left: 8px solid #28a745;
+}
+.overview-card.maintenance {
+  border-left: 8px solid #ffc107;
+}
+
+.main-section {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.dispensers-section {
+  flex: 3;
+}
+
+.dispensers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.dispenser-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  border-left: 8px solid transparent;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.dispenser-card:hover {
+  transform: translateY(-5px);
+}
+
+.active-card {
+  border-left-color: #28a745;
+}
+
+.maintenance-card {
+  border-left-color: #ffc107;
+}
+
+.dispenser-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.status-circle.green {
+  background: #28a745;
+}
+
+.status-circle.yellow {
+  background: #ffc107;
+}
+
+.sensor-info p {
+  margin: 5px 0;
+}
+
+.sensor-info small {
+  color: #666;
+}
+
+.delete-section {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.delete-icon {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-icon:hover {
+  transform: scale(1.2);
+}
+
+.add-dispenser-form {
+  flex: 1;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.add-dispenser-form input,
+.add-dispenser-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+.add-dispenser-form button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-dispenser-form button:hover {
+  background: #0056b3;
+}

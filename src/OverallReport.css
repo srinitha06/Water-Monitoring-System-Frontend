@@ -1,0 +1,33 @@
+.overall-container {
+  padding: 20px;
+  background: #f5f8ff;
+  border-radius: 16px;
+}
+
+.summary-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+.card {
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px 40px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.chart-section {
+  background: white;
+  margin-top: 25px;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #0077b6;
+}

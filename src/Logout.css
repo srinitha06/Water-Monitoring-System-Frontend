@@ -1,0 +1,14 @@
+.logout-container {
+  text-align: center;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.logout-container h2 {
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.logout-container p {
+  color: #555;
+}

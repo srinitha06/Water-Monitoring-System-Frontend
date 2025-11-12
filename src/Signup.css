@@ -1,0 +1,122 @@
+.signup-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: 
+    linear-gradient(
+      rgba(0, 36, 61, 0.6),
+      rgba(0, 55, 90, 0.6)
+    ),
+    url("https://media.istockphoto.com/id/1209839122/photo/underwater.jpg?s=612x612&w=0&k=20&c=QZ_2G6IpXlTYATwJg3gvwNLn5LlqipfodTn1J7K80cY=");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+}
+
+.signup-form-card {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 3rem 2.5rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: #e3f6ff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-form-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+}
+
+.signup-form-card h2 {
+  color: #caf0f8;
+  margin-bottom: 1.8rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.signup-form-card label {
+  display: block;
+  text-align: left;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #e0f7ff;
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+.signup-form-card input {
+  width: 100%;
+  padding: 0.85rem;
+  margin-bottom: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  outline: none;
+  font-size: 1rem;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-form-card input:focus {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 8px rgba(0, 191, 255, 0.4);
+}
+
+.signup-form-card input::placeholder {
+  color: #dceefb;
+}
+
+.signup-form-card button {
+  width: 100%;
+  padding: 0.9rem;
+  background:  #0077b6;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  font-size: 1rem;
+}
+
+.signup-form-card button:hover {
+  background: #023e8a;
+  transform: translateY(-2px);
+}
+
+
+.login-text {
+  margin-top: 1.2rem;
+  color: #caf0f8;
+  font-size: 0.95rem;
+}
+
+.login-text a {
+  color: #90e0ef;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .signup-page {
+    padding: 20px;
+  }
+
+  .signup-form-card {
+    max-width: 90%;
+    padding: 2.5rem 1.5rem;
+  }
+}
